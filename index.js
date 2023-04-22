@@ -18,6 +18,7 @@ app.get('/', (req, res) => {
     res.send(categories);
   })
 
+
   app.get('/category/:id', (req, res) =>{
     const id = req.params.id;
     if(id === '08'){
@@ -40,6 +41,6 @@ app.get('/', (req, res) => {
   
   // POST method route
   app.listen(port, () =>{
-    console.log('Dragon news port', port)
+    console.log('Dragon news port server', port)
   })
  
